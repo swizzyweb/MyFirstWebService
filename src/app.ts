@@ -1,5 +1,5 @@
 import { Application } from "express";
-import { IRunProps, IRunResult, IWebService, WebService } from "swizzy-web-service";
+import { IRunProps, IRunResult, IWebService, WebService } from "@swizzyweb/swizzy-web-service";
 import { router } from "./routers/ping-router";
 
 export class MyFirstWebService extends WebService {
