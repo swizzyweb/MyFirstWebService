@@ -1,7 +1,7 @@
 import { Application } from "express";
 import { IRunProps, IRunResult, IWebService, WebService } from "@swizzyweb/swizzy-web-service";
 import { router } from "./routers/ping-router";
-
+import { getPackageJson } from '@swizzyweb/swizzy-common';
 export class MyFirstWebService extends WebService {
     name = 'MyFirstWebService';
 
@@ -42,5 +42,6 @@ export class MyFirstWebService extends WebService {
 }
 
 export function getWebservice(props: any): IWebService {
-    return new MyFirstWebService(props);
+    const packageJson = getPackageJson(1);
+    return new MyFirstWebService({...props, ...props?.serviceArgs??{}, packageName: packageJson.name});
 }

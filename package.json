@@ -1,6 +1,6 @@
 {
   "name": "@swizzyweb/my-first-web-service",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "",
   "main": "dist/app.js",
   "types": "dist/app.d.ts",
@@ -14,13 +14,14 @@
   "author": "WannaWatchMeCode",
   "license": "MIT",
   "devDependencies": {
-    "@swizzyweb/swerve": "^0.1.0",
+    "@swizzyweb/swerve": "^0.2.0",
     "@types/express": "^4.17.21",
     "@types/node": "^20.12.8",
     "typescript": "^5.4.5"
   },
   "dependencies": {
-    "@swizzyweb/swizzy-web-service": "^0.1.0",
+    "@swizzyweb/swizzy-common": "^0.2.0",
+    "@swizzyweb/swizzy-web-service": "^0.2.0",
     "express": "^4.19.2"
   }
 }
